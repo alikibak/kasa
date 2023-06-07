@@ -1,0 +1,18 @@
+.display_error {
+    @include flexcolumn(center,center);
+    row-gap: 139px;
+    color: $color-1;
+    h1{
+        font-size: 404px;
+        font-weight: 700px;
+    }
+    h2 {
+        font-size: 36px;
+        font-weight: 500;
+    }
+    p {
+        color: $color-1;
+        margin-bottom: 139px;
+        text-decoration: underline;
+    }
+}

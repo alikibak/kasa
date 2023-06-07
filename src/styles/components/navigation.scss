@@ -1,0 +1,30 @@
+.navigation {
+    @include flexrow (space-between, center);
+    margin: 45px 100px 50px 100px;
+        img {
+            width: 210.32px;
+            height: 68px;
+        }
+
+        ul {
+            display: flex;
+            margin: 30px;
+            gap : 57px;
+
+            a {
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 24px;
+
+                li {
+                    color: $color-1;
+                    cursor: pointer;
+                }
+            }
+
+            .nav-active {
+                text-decoration: underline;
+                text-decoration-color: $color-1;
+            }
+        }
+}

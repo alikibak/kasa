@@ -1,0 +1,15 @@
+.footer {
+    @include flexcolumn (center,space-evenly);
+    background-color: black;
+    height: 209px ;
+    margin: 0 !important;
+        p {
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        img {
+            width: 122px;
+            height: 39.44px;
+        }
+}

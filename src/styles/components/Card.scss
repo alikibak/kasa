@@ -1,0 +1,15 @@
+.card {
+    @include flexrow (flex-start,flex-end) ;
+    background: center/cover;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    cursor: pointer;
+        h2 {
+            font-weight: 500;
+            font-size: 18px;
+            color: white;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+}
