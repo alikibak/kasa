@@ -1,11 +1,12 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
+import { GET_LOCATIONS } from "../apiRoutes";
 
 const Location = () => {
 	const [data, setData] = useState([]);
 	useEffect(() => {
-		axios.get("./logements.json").then((res) => setData(res.data));
+		axios.get(GET_LOCATIONS).then((res) => setData(res.data));
 	}, []);
 	return (
 		<div className="gallery">

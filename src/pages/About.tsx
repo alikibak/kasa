@@ -8,7 +8,7 @@ const About = () => {
 	return (
 		<div>
 			<Navigation />
-			<Banner />
+			<Banner text="" image="../styles/assets/IMGAbout.png" />
 			<ScrollingContainer />
 			<Footer />
 		</div>

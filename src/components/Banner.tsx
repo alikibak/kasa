@@ -1,29 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { BannerProps } from "../apiRoutes/types";
 
-const Banner = () => {
-	const [bannertext, setbannertext] = useState(
-		"Chez vous, partout et ailleurs"
-	);
-	useEffect(() => {
-		if (window.location.pathname === "/about") {
-			setbannertext("");
-		} else {
-			setbannertext("Chez vous, partout et ailleurs");
-		}
-	}, []);
-
-	let bannerAbout = false;
-
-	if (window.location.pathname === "/about") {
-		bannerAbout = true;
-	} else {
-		bannerAbout = false;
-	}
-	let result = bannerAbout ? "bannerAbout" : "banner";
-
+const Banner = ({ text }: BannerProps, { image }: BannerProps) => {
 	return (
-		<figure className={result}>
-			<h1>{bannertext}</h1>
+		<figure className="banner" style={{ backgroundImage: `url('${image}')` }}>
+			{text && <h1>{text}</h1>}
 		</figure>
 	);
 };

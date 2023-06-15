@@ -6,16 +6,16 @@ const ScrollingContainer = () => {
 		<div className="ScrollingContainter">
 			<ul>
 				<li>
-					<ScrollingMenu title="Fiabilité" />
+					<ScrollingMenu title="Fiabilité" text="lorem100" />
 				</li>
 				<li>
-					<ScrollingMenu title="Respect" />
+					<ScrollingMenu title="Respect" text="lorem100" />
 				</li>
 				<li>
-					<ScrollingMenu title="Service" />
+					<ScrollingMenu title="Service" text="lorem100" />
 				</li>
 				<li>
-					<ScrollingMenu title="Sécurité" />
+					<ScrollingMenu title="Sécurité" text="lorem100" />
 				</li>
 			</ul>
 		</div>
