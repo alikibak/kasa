@@ -1,0 +1,70 @@
+.descriptionContainer {
+    @include flexrow (space-between,center);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.tagButton {
+    @include flexrow (center,center);
+    min-width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: $color-1;
+    color: white;
+    font-size: 14px
+}
+.tagContainer {
+    @include flexrow (flex-start,center);
+    gap: 10px;
+    margin-top: 20px;
+}
+.title-tag {
+    color: $color-1;
+    margin-top: 30px;
+    h1 {
+        font-weight: 500;
+        font-size: 36px;
+    }
+    h2 {
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+.scrollingLocation{
+    @include flexrow (flex-start,flex-start);
+    margin-left: 100px;
+    margin-right: 100px;
+    gap : 76px;
+    margin-top: 24px;
+}
+.rating-hote {
+    p {
+        color: $color-1;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    figure{
+        width: 64px;
+        height: 64px;
+        border-radius: 25px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+    }
+}
+.hoteContainer {
+    @include flexrow (center,center);
+    gap: 10px;
+}
+.ratingContainer {
+    @include flexrow (center,center);
+    gap: 15px;
+    margin-top: 21px;
+    div{
+        width: 24.75px;
+        height: 24px;
+    }
+}

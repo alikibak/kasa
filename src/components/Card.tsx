@@ -1,6 +1,13 @@
 import React from "react";
-import { CardProps } from "../apiRoutes/types";
 import { NavLink } from "react-router-dom";
+
+export interface CardProps {
+	location: {
+		cover: string;
+		title: string;
+		id: string;
+	};
+}
 
 const Card = ({ location }: CardProps) => {
 	return (
