@@ -1,6 +1,7 @@
 import React from "react";
+import { ScrollingType } from "../apiRoutes/types";
 
-const ScrollingMenu = ({ title }: any) => {
+const ScrollingMenu = ({ title, text }: ScrollingType) => {
 	return (
 		<div className="dropdown">
 			<div className="mainMenu">
@@ -8,14 +9,7 @@ const ScrollingMenu = ({ title }: any) => {
 				<img src="./arrow.png" alt="fleche" />
 			</div>
 			<div className="subMenu">
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vel,
-					veritatis optio molestiae quas quaerat dolore temporibus quod
-					perspiciatis hic asperiores libero, doloribus animi, eligendi
-					laudantium cumque maiores. Vero, numquam accusantium natus sapiente
-					aliquid at culpa! Dolorem cum, asperiores explicabo omnis numquam
-					ullam aut animi recusandae fugiat cumque voluptas sed.
-				</p>
+				<p>{text}</p>
 			</div>
 		</div>
 	);
