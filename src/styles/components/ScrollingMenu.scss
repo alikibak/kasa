@@ -4,7 +4,6 @@
     border-radius: 5px;
     height: 52px;
     padding: 0 20px;
-    width: 1023px;
         h1 {
             font-size: 24px;
             font-weight: 500;
@@ -16,7 +15,7 @@
     position: relative;
     display: inline-block;
     margin-bottom: 30px;
-    width: 1023px;
+    width: 64rem;
 }
 
 .subMenu {
@@ -26,7 +25,6 @@
     padding-bottom: 25px;
     display: none;
     background-color: #F6F6F6;
-    width: 1023px;
 }
 
 .dropdown:hover .subMenu {

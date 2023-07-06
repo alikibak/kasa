@@ -8,6 +8,7 @@ const Location = () => {
 	useEffect(() => {
 		axios.get(GET_LOCATIONS).then((res) => setData(res.data));
 	}, []);
+
 	return (
 		<div className="gallery">
 			{data.map((logements, index) => (

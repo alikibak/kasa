@@ -1,22 +1,16 @@
-export interface ScrollingType {
+export interface testFetch {
+	id: string;
 	title: string;
-	text : string;
-}
-
-export interface CardProps {
-	location: {
-		cover: string;
-		title: string;
-		id: string;
+	cover: string;
+	pictures: string[];
+	description: string;
+	host: {
+		name: string;
+		picture: string;
 	};
-}
-
-export interface BannerProps {
-	image: string;
-	text?: string;
-};
-
-export interface infoLocation {
-	id : string;
-	pictures : string;
+	rating: string;
+	location: string;
+	equipments: string[];
+	tags: string[];
+	data: string;
 }

@@ -6,17 +6,19 @@ import About from "./pages/About";
 import { ABOUT_ROUTE, ERROR_ROUTE, HOME_ROUTE, LOCATION_ROUTE } from "./routes";
 import Page_location from "./pages/Location";
 
-const componentName = () => {
+const Kasa = () => {
 	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path={HOME_ROUTE} element={<Home />}></Route>
-				<Route path={ABOUT_ROUTE} element={<About />}></Route>
-				<Route path={ERROR_ROUTE} element={<Erreur404 />}></Route>
-				<Route path={LOCATION_ROUTE} element={<Page_location />}></Route>
-			</Routes>
-		</BrowserRouter>
+		<div>
+			<BrowserRouter>
+				<Routes>
+					<Route path={HOME_ROUTE} element={<Home />}></Route>
+					<Route path={ABOUT_ROUTE} element={<About />}></Route>
+					<Route path={ERROR_ROUTE} element={<Erreur404 />}></Route>
+					<Route path={LOCATION_ROUTE} element={<Page_location />}></Route>
+				</Routes>
+			</BrowserRouter>
+		</div>
 	);
 };
 
-export default componentName;
+export default Kasa;
